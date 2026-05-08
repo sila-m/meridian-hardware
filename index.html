@@ -3,88 +3,599 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meridian Hardware – Nairobi</title>
-
+  <title>Meridian Hardware – Your Trusted Hardware Partner in Nairobi</title>
   <link rel="stylesheet" href="style.css" />
-
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <!-- Google Fonts: DM Serif Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="hero-content">
-    <h1>Meridian Hardware</h1>
-    <p>Your Trusted Hardware Partner in Nairobi</p>
-    <a href="tel:0724584071" class="btn">Call Now</a>
+  <!-- ───────────────────────────────────────────────────────
+       NAV
+  ─────────────────────────────────────────────────────────── -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">⚙</span>
+        <span>Meridian<strong>Hardware</strong></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Products</a></li>
+        <li><a href="#features">Why Us</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="tel:0724584071" class="btn btn-nav">Call Now</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ───────────────────────────────────────────────────────
+       HERO
+  ─────────────────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-bg"></div>
+
+    <div class="hero-badge reveal">
+      <span class="badge-dot"></span> Open Today · Closes 5 PM
+    </div>
+
+    <div class="hero-content container">
+      <p class="hero-eyebrow reveal">Kangema House · Nairobi, Kenya</p>
+      <h1 class="hero-title reveal">
+        Meridian<br/><em>Hardware</em>
+      </h1>
+      <p class="hero-tagline reveal">Your Trusted Hardware Partner in Nairobi</p>
+
+      <!-- Star rating -->
+      <div class="hero-rating reveal">
+        <div class="stars" aria-label="Rating: 4.2 out of 5">
+          <span class="star full">★</span>
+          <span class="star full">★</span>
+          <span class="star full">★</span>
+          <span class="star full">★</span>
+          <span class="star partial">★</span>
+        </div>
+        <span class="rating-text"><strong>4.2</strong> / 5.0 &nbsp;·&nbsp; 71 Reviews</span>
+      </div>
+
+      <div class="hero-cta reveal">
+        <a href="tel:0724584071" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.01l-2.2 2.21Z" fill="currentColor"/></svg>
+          Call Now
+        </a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Kangema+House+Munyu+Road+Nairobi" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z" fill="currentColor"/></svg>
+          Get Directions
+        </a>
+      </div>
+
+      <!-- Delivery badge -->
+      <div class="delivery-badge reveal">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2a3 3 0 0 0 6 0h6a3 3 0 0 0 6 0h2v-5l-3-4ZM6 18.5A1.5 1.5 0 1 1 6 15.5a1.5 1.5 0 0 1 0 3Zm13.5-9 1.97 2.5H17V9.5h2.5Zm-1.5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="currentColor"/></svg>
+        Same-Day Delivery Available
+      </div>
+    </div>
+
+    <!-- Hero image -->
+    <div class="hero-image reveal">
+      <img
+        src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?w=800&q=80"
+        alt="Meridian Hardware Store Interior"
+        class="hero-img-real"
+        loading="eager"
+      />
+    </div>
+  </section>
+
+  <!-- ───────────────────────────────────────────────────────
+       STATS BAR
+  ─────────────────────────────────────────────────────────── -->
+  <div class="stats-bar">
+    <div class="container stats-inner">
+      <div class="stat reveal">
+        <span class="stat-num" data-count="71">0</span>
+        <span class="stat-label">Happy Customers</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat reveal">
+        <span class="stat-num">4.2★</span>
+        <span class="stat-label">Average Rating</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat reveal">
+        <span class="stat-num">500+</span>
+        <span class="stat-label">Products Stocked</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat reveal">
+        <span class="stat-num">Same</span>
+        <span class="stat-label">Day Delivery</span>
+      </div>
+    </div>
   </div>
-</header>
 
-<!-- ABOUT -->
-<section class="section container" id="about">
-  <h2>About Us</h2>
+  <!-- ───────────────────────────────────────────────────────
+       ABOUT
+  ─────────────────────────────────────────────────────────── -->
+  <section class="about section" id="about">
+    <div class="container about-inner">
 
-  <div class="grid-2">
-    <div>
-      <h3>Built on Trust, Stocked for Every Job</h3>
-      <p>
-        Meridian Hardware is located at Kangema House, Munyu Road, Nairobi.
-        We supply quality tools, plumbing, electrical, timber, and construction materials.
-      </p>
-      <p>
-        We support contractors, builders, and homeowners with reliable stock and fast service.
-      </p>
+      <div class="about-images reveal">
+        <img
+          src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=700&q=80"
+          alt="Hardware tools and workshop equipment"
+          class="about-img-1 about-real-img"
+          loading="lazy"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&q=80"
+          alt="Construction materials and supplies"
+          class="about-img-2 about-real-img"
+          loading="lazy"
+        />
+        <div class="about-tag">Est. · Nairobi, Kenya</div>
+      </div>
+
+      <div class="about-text reveal">
+        <p class="section-eyebrow">Who We Are</p>
+        <h2 class="section-title">Built on Trust,<br/><em>Stocked for Every Job</em></h2>
+        <p class="about-body">
+          Meridian Hardware is Nairobi's go-to hardware destination, conveniently located at Kangema House on Munyu Road. We serve contractors, builders, homeowners, and DIY enthusiasts with an extensive range of quality products — from hand tools and power equipment to plumbing fittings, electrical supplies, and heavy construction materials.
+        </p>
+        <p class="about-body">
+          Our experienced team is committed to helping you find exactly what you need, quickly and affordably. Whether you're fixing a leaky pipe, wiring a new room, or completing a major construction project, Meridian Hardware has you covered with honest advice and the right stock.
+        </p>
+        <ul class="about-pillars">
+          <li>
+            <span class="pillar-icon">✓</span>
+            <div>
+              <strong>Reliable Stock</strong>
+              <p>Wide range of quality products always in store</p>
+            </div>
+          </li>
+          <li>
+            <span class="pillar-icon">✓</span>
+            <div>
+              <strong>Expert Guidance</strong>
+              <p>Knowledgeable staff ready to assist on any project</p>
+            </div>
+          </li>
+          <li>
+            <span class="pillar-icon">✓</span>
+            <div>
+              <strong>Fast Delivery</strong>
+              <p>Same-day delivery across Nairobi available</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
     </div>
+  </section>
 
-    <div>
-      <img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8" alt="Hardware Tools">
+  <!-- ───────────────────────────────────────────────────────
+       PRODUCTS / SERVICES
+  ─────────────────────────────────────────────────────────── -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">What We Stock</p>
+        <h2 class="section-title">Product Categories</h2>
+        <p class="section-sub">Everything your project needs, under one roof.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=500&q=80" alt="Hand tools" loading="lazy" />
+          </div>
+          <div class="card-icon-wrap">🔨</div>
+          <h3>Hand Tools</h3>
+          <p>Hammers, screwdrivers, wrenches, pliers, chisels, measuring tapes, levels, and more for every trade.</p>
+          <ul class="card-list">
+            <li>Hammers & Mallets</li>
+            <li>Spanners & Wrenches</li>
+            <li>Screwdrivers & Bits</li>
+            <li>Measuring Tools</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=500&q=80" alt="Power tools" loading="lazy" />
+          </div>
+          <div class="card-icon-wrap">⚡</div>
+          <h3>Power Tools</h3>
+          <p>Electric drills, angle grinders, circular saws, and power equipment for professionals and DIYers.</p>
+          <ul class="card-list">
+            <li>Electric Drills</li>
+            <li>Angle Grinders</li>
+            <li>Circular Saws</li>
+            <li>Sanders & Polishers</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&q=80" alt="Construction materials" loading="lazy" />
+          </div>
+          <div class="card-icon-wrap">🏗️</div>
+          <h3>Construction Materials</h3>
+          <p>Cement, aggregates, steel bars, timber, nails, and structural supplies for any build.</p>
+          <ul class="card-list">
+            <li>Cement & Concrete</li>
+            <li>Steel Bars & Mesh</li>
+            <li>Timber & Boards</li>
+            <li>Nails & Fasteners</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="Plumbing supplies" loading="lazy" />
+          </div>
+          <div class="card-icon-wrap">🚿</div>
+          <h3>Plumbing Supplies</h3>
+          <p>Pipes, fittings, taps, valves, water tanks, and everything needed for plumbing installations.</p>
+          <ul class="card-list">
+            <li>PVC & GI Pipes</li>
+            <li>Fittings & Valves</li>
+            <li>Taps & Fixtures</li>
+            <li>Water Tanks</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=500&q=80" alt="Electrical items" loading="lazy" />
+          </div>
+          <div class="card-icon-wrap">💡</div>
+          <h3>Electrical Items</h3>
+          <p>Wires, cables, switches, sockets, circuit breakers, conduit, and all your electrical essentials.</p>
+          <ul class="card-list">
+            <li>Cables & Wires</li>
+            <li>Switches & Sockets</li>
+            <li>Circuit Breakers</li>
+            <li>Conduit & Trunking</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?w=500&q=80" alt="Paints and finishes" loading="lazy" />
+          </div>
+          <div class="card-icon-wrap">🎨</div>
+          <h3>Paints & Finishes</h3>
+          <p>Interior and exterior paints, primers, varnishes, and surface preparation materials.</p>
+          <ul class="card-list">
+            <li>Interior Emulsion</li>
+            <li>Exterior Paints</li>
+            <li>Primers & Varnishes</li>
+            <li>Paint Brushes & Rollers</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Product image row -->
+      <div class="product-images reveal">
+        <div class="prod-img-wrap">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt="Plumbing pipes and fittings" loading="lazy" />
+          <span class="prod-label">Plumbing</span>
+        </div>
+        <div class="prod-img-wrap">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&q=80" alt="Electrical wires and cables" loading="lazy" />
+          <span class="prod-label">Electrical</span>
+        </div>
+        <div class="prod-img-wrap">
+          <img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=400&q=80" alt="Power tools" loading="lazy" />
+          <span class="prod-label">Power Tools</span>
+        </div>
+        <div class="prod-img-wrap">
+          <img src="https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?w=400&q=80" alt="Paint and finishing materials" loading="lazy" />
+          <span class="prod-label">Paints</span>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PRODUCTS -->
-<section class="section container" id="products">
-  <h2>Products</h2>
+  <!-- ───────────────────────────────────────────────────────
+       WHY US / FEATURES
+  ─────────────────────────────────────────────────────────── -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Why Choose Us</p>
+        <h2 class="section-title">The Meridian Difference</h2>
+      </div>
 
-  <div class="grid-4">
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8" alt="Fasteners">
-      <h3>Fasteners</h3>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">🚚</div>
+          <h3>Same-Day Delivery</h3>
+          <p>Order before 3 PM and receive your hardware supplies the same day across Nairobi.</p>
+          <span class="feature-badge">Available Now</span>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">💰</div>
+          <h3>Competitive Pricing</h3>
+          <p>Fair, transparent prices on all products with no hidden charges — bulk discounts available.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🧑‍🔧</div>
+          <h3>Expert Staff</h3>
+          <p>Our team knows hardware inside-out. Get honest, accurate advice before every purchase.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📦</div>
+          <h3>Always In Stock</h3>
+          <p>We maintain deep stock levels so your project never stalls waiting for supplies.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📍</div>
+          <h3>Central Location</h3>
+          <p>Easily accessible at Kangema House, Munyu Road — right in the heart of Nairobi.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">⭐</div>
+          <h3>4.2 Star Rated</h3>
+          <p>Trusted by over 71 customers who rate us highly for product quality and service.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0" alt="Electrical">
-      <h3>Electrical</h3>
+  <!-- ───────────────────────────────────────────────────────
+       REVIEWS
+  ─────────────────────────────────────────────────────────── -->
+  <section class="reviews section" id="reviews">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Customer Feedback</p>
+        <h2 class="section-title">What People Say</h2>
+      </div>
+
+      <!-- Rating summary -->
+      <div class="rating-summary reveal">
+        <div class="rating-big">
+          <span class="rating-num">4.2</span>
+          <div>
+            <div class="stars large">★★★★<span class="half-star">★</span></div>
+            <p>Based on 71 Reviews</p>
+          </div>
+        </div>
+        <div class="rating-bars">
+          <div class="bar-row">
+            <span>5 ★</span>
+            <div class="bar-track"><div class="bar-fill" style="width:52%"></div></div>
+            <span>52%</span>
+          </div>
+          <div class="bar-row">
+            <span>4 ★</span>
+            <div class="bar-track"><div class="bar-fill" style="width:28%"></div></div>
+            <span>28%</span>
+          </div>
+          <div class="bar-row">
+            <span>3 ★</span>
+            <div class="bar-track"><div class="bar-fill" style="width:10%"></div></div>
+            <span>10%</span>
+          </div>
+          <div class="bar-row">
+            <span>2 ★</span>
+            <div class="bar-track"><div class="bar-fill" style="width:6%"></div></div>
+            <span>6%</span>
+          </div>
+          <div class="bar-row">
+            <span>1 ★</span>
+            <div class="bar-track"><div class="bar-fill" style="width:4%"></div></div>
+            <span>4%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review cards -->
+      <div class="reviews-grid">
+
+        <div class="review-card reveal">
+          <div class="review-header">
+            <div class="reviewer-avatar">JM</div>
+            <div>
+              <strong>James Mwangi</strong>
+              <p class="review-date">2 weeks ago</p>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p>"Excellent service! Got exactly what I needed for my house renovation — cement, steel bars, and electrical cables. The staff were very helpful and knowledgeable. Prices are fair too."</p>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-header">
+            <div class="reviewer-avatar">AK</div>
+            <div>
+              <strong>Aisha Kamau</strong>
+              <p class="review-date">1 month ago</p>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p>"I've been shopping here for all my plumbing supplies for the past year. They always have what I need in stock and the same-day delivery saved me twice on urgent jobs!"</p>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-header">
+            <div class="reviewer-avatar">PN</div>
+            <div>
+              <strong>Peter Njoroge</strong>
+              <p class="review-date">3 weeks ago</p>
+            </div>
+            <div class="review-stars">★★★★☆</div>
+          </div>
+          <p>"Good variety of tools and building materials. The team helped me choose the right drill bits for my concrete walls. Will definitely come back for my next project."</p>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-header">
+            <div class="reviewer-avatar">GW</div>
+            <div>
+              <strong>Grace Wanjiru</strong>
+              <p class="review-date">5 days ago</p>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p>"Fantastic hardware shop! Bought paints, brushes, and sandpaper for my apartment remodel. Very organized, clean shop, and the staff know their products well. Highly recommended!"</p>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-header">
+            <div class="reviewer-avatar">DM</div>
+            <div>
+              <strong>David Mutua</strong>
+              <p class="review-date">2 months ago</p>
+            </div>
+            <div class="review-stars">★★★★☆</div>
+          </div>
+          <p>"Reliable and well-stocked store in the CBD. Got all my electrical supplies here at competitive prices. Only wish they stayed open a little later on weekdays."</p>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-header">
+            <div class="reviewer-avatar">FL</div>
+            <div>
+              <strong>Faith Lerionka</strong>
+              <p class="review-date">3 months ago</p>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p>"As a contractor, I need a dependable hardware supplier. Meridian Hardware has never let me down. Quality products, fair pricing, and their delivery team is punctual."</p>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1581579185169-1b49c8b5c0a5" alt="Plumbing">
-      <h3>Plumbing</h3>
+  <!-- ───────────────────────────────────────────────────────
+       MAP + CONTACT
+  ─────────────────────────────────────────────────────────── -->
+  <section class="contact section" id="contact">
+    <div class="container contact-inner">
+
+      <div class="contact-info reveal">
+        <p class="section-eyebrow">Find Us</p>
+        <h2 class="section-title">Get In Touch</h2>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:0724584071" class="contact-link">0724 584 071</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <strong>Address</strong>
+              <p>Room 1, Ground Floor, Kangema House<br/>Munyu Road, Nairobi, Kenya</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">🕐</div>
+            <div>
+              <strong>Business Hours</strong>
+              <p>Monday – Saturday: 8:00 AM – 5:00 PM<br/>Sunday: Closed</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">🚚</div>
+            <div>
+              <strong>Delivery</strong>
+              <p>Same-day delivery available across Nairobi<br/>Order before 3:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-cta">
+          <a href="tel:0724584071" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.01l-2.2 2.21Z" fill="currentColor"/></svg>
+            Call 0724 584 071
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Kangema+House+Munyu+Road+Nairobi" target="_blank" rel="noopener" class="btn btn-outline dark">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z" fill="currentColor"/></svg>
+            Get Directions
+          </a>
+        </div>
+      </div>
+
+      <!-- Map embed -->
+      <div class="map-container reveal">
+        <iframe
+          title="Meridian Hardware Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8017!2d36.8218!3d-1.2921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d664a2a977%3A0x0!2sKangema%20House%2C%20Munyu%20Road%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1700000000000!5m2!1sen!2ske"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="map-overlay">
+          <div class="map-pin-card">
+            <span>📍</span>
+            <div>
+              <strong>Meridian Hardware</strong>
+              <small>Kangema House, Munyu Road</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </section>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Timber">
-      <h3>Timber</h3>
+  <!-- ───────────────────────────────────────────────────────
+       FOOTER
+  ─────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <span class="logo-icon">⚙</span>
+          <span>Meridian<strong>Hardware</strong></span>
+        </a>
+        <p>Your trusted hardware partner in Nairobi, Kenya. Quality products, expert service, same-day delivery.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Products</a></li>
+          <li><a href="#features">Why Us</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>📞 <a href="tel:0724584071">0724 584 071</a></p>
+        <p>📍 Kangema House, Munyu Rd, Nairobi</p>
+        <p>🕐 Mon–Sat: 8 AM – 5 PM</p>
+        <p class="open-badge"><span class="badge-dot"></span> Open Now</p>
+      </div>
     </div>
+    <div class="footer-bottom">
+      <p>© 2025 Meridian Hardware. All rights reserved.</p>
+      <p>Room 1, Ground Floor, Kangema House, Munyu Road, Nairobi, Kenya</p>
+    </div>
+  </footer>
 
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="section container" id="contact">
-  <h2>Contact Us</h2>
-
-  <p>📞 0724 584 071</p>
-  <p>📍 Kangema House, Munyu Road, Nairobi</p>
-  <p>🕒 Mon–Sat: 8AM – 5PM</p>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Meridian Hardware, Nairobi Kenya</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>

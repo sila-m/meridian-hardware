@@ -170,7 +170,7 @@ img { max-width: 100%; display: block; }
   background: var(--clr-amber-lite);
 }
 
-/* ── Image placeholders ─────────────────────────────────────────── */
+/* ── Image placeholders (fallback) ──────────────────────────────── */
 .img-placeholder {
   background: linear-gradient(135deg, var(--clr-dark-2) 0%, var(--clr-dark-3) 100%);
   border-radius: var(--radius-md);
@@ -197,6 +197,80 @@ img { max-width: 100%; display: block; }
 }
 
 .ph-icon { font-size: 2.2rem; filter: grayscale(30%); }
+
+/* ── Real images ────────────────────────────────────────────────── */
+
+/* Hero image */
+.hero-img-real {
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  border: 3px solid rgba(245,158,11,.25);
+  box-shadow: 0 24px 60px rgba(0,0,0,.5), var(--shadow-amber);
+  display: block;
+}
+
+/* About images */
+.about-images { position: relative; }
+
+.about-real-img {
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  display: block;
+}
+
+.about-img-1.about-real-img {
+  width: 80%;
+  aspect-ratio: 4/3;
+  margin-inline-start: auto;
+  box-shadow: var(--shadow-lg);
+}
+
+.about-img-2.about-real-img {
+  width: 65%;
+  aspect-ratio: 1;
+  position: absolute;
+  bottom: -2.5rem;
+  left: 0;
+  border: 4px solid var(--clr-off-white);
+  box-shadow: var(--shadow-md);
+  z-index: 2;
+}
+
+/* Product image row */
+.prod-img-wrap {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 1;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,.07);
+}
+
+.prod-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s ease;
+  display: block;
+}
+
+.prod-img-wrap:hover img { transform: scale(1.07); }
+
+.prod-label {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,.75));
+  color: #fff;
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: 1.5rem .75rem .6rem;
+  text-align: center;
+}
 
 /* ── Open badge dot ─────────────────────────────────────────────── */
 .badge-dot {
@@ -627,6 +701,25 @@ img { max-width: 100%; display: block; }
 }
 
 .service-card:hover::before { transform: scaleX(1); }
+
+.card-img-wrap {
+  width: 100%;
+  height: 160px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(255,255,255,.07);
+}
+
+.card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .45s ease;
+}
+
+.service-card:hover .card-img-wrap img { transform: scale(1.06); }
 
 .card-icon-wrap {
   font-size: 2.2rem;
